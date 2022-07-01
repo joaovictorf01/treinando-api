@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "treinando-api", "treinando-api\treinando-api.csproj", "{CE2799EA-4470-4862-8AC5-47017CEB600A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE2799EA-4470-4862-8AC5-47017CEB600A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE2799EA-4470-4862-8AC5-47017CEB600A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE2799EA-4470-4862-8AC5-47017CEB600A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE2799EA-4470-4862-8AC5-47017CEB600A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7FB63445-A12B-4FAC-B6F4-95A57531C482}
+	EndGlobalSection
+EndGlobal
