@@ -8,13 +8,15 @@ public class PersonService
     public string data;
     HttpClient client = new HttpClient();
 
-            public  async Task<string> GetDataapi()
+    public async Task<string> GetDataapi()
     {
-        
-        var responseMessage        = await client.GetAsync("http://gateway.marvel.com/v1/public/comics");
 
-        Console.WriteLine(responseMessage);
-        return data;        
+        var responseMessage = await client.GetAsync("http://gateway.marvel.com/v1/public/comics");
+
+        data = responseMessage.ToString();
+        Console.WriteLine(data);    
+
+        return data;
     }
 
 

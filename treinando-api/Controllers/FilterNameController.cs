@@ -5,7 +5,13 @@ namespace Treinando_api.Controllers;
 
 public class FilterNameController : ControllerBase
 {
-
+    [HttpGet]
+    public ActionResult<string> GetAction()
+    {
+        return Content(" test");
+    }
+    
 
 }
+
 
