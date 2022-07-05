@@ -1,0 +1,1 @@
+https://gateway.marvel.com/v1/public/characters?ts=yourtsvalue&apikey=publickeyvalue&hash=hashvalue&

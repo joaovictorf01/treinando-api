@@ -5,22 +5,20 @@ namespace Treinando_api.Services;
 
 public class PersonService
 {
-    public string data;
+    
     HttpClient client = new HttpClient();
 
-    public async Task<string> GetDataapi()
+    public async Task<object> GetDataApi()
     {
 
-        var responseMessage = await client.GetAsync("http://gateway.marvel.com/v1/public/comics");
+        var responseMessage = await client.GetAsync("https://gateway.marvel.com/v1/public/characters?ts=yourtsvalue&apikey=publickeyvalue&hash=hashvalue");
 
-        data = responseMessage.ToString();
-        Console.WriteLine(data);    
+        Console.WriteLine(responseMessage.Content.ReadAsStringAsync);
 
-        return data;
+        return responseMessage.Content.ReadAsStringAsync;
     }
 
-
-
+    
 
 
 }
