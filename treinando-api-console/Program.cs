@@ -6,10 +6,16 @@ public class Program
     {
 
         PersonService service = new PersonService();
-          var jsonReturn = await service.GetDataApi();
-        Person character = JsonSerializer.Deserialize<Person>(jsonReturn);
+        var jsonReturn = await service.GetDataApi();
 
-        Console.WriteLine(character.name);
+        var characters = JsonSerializer.Deserialize<IList<
+        Person>>(jsonReturn);
+        foreach (var character in characters)
+        {
+            Console.WriteLine(character.name + character.description);    
+        }   
+        
+
     }
 
 }
