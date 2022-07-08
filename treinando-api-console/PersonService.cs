@@ -26,11 +26,11 @@ string privateKey = "b45c336c0793c7d5708628390bc9383e90ac7a01";
 
     HttpClient client = new HttpClient();
 
-    public async Task<object> GetDataApi()
+    public async Task<string> GetDataApi()
     {
 
          var responseMessage = await client.GetAsync("https://gateway.marvel.com/v1/public/characters?ts=" + ts + "&apikey=" + publicKey + "&hash=" + GerarHash(ts, publicKey, privateKey));       
-            Console.WriteLine(await responseMessage.Content.ReadAsStringAsync());
+            //Console.WriteLine(await responseMessage.Content.ReadAsStringAsync());
             string result = await responseMessage.Content.ReadAsStringAsync();
             return result;
         

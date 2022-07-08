@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+
+using System.Globalization;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
+
+public partial class Result
+{
+    [JsonProperty("id")]
+    public long Id { get; set; }
+
+    [JsonProperty("name")]
+    public string Name { get; set; }
+
+    [JsonProperty("description")]
+    public string Description { get; set; }
+
+    [JsonProperty("modified")]
+    public string Modified { get; set; }
+
+    [JsonProperty("thumbnail")]
+    public Thumbnail Thumbnail { get; set; }
+
+    [JsonProperty("resourceURI")]
+    public Uri ResourceUri { get; set; }
+
+    [JsonProperty("comics")]
+    public Comics Comics { get; set; }
+
+    [JsonProperty("series")]
+    public Comics Series { get; set; }
+
+    [JsonProperty("stories")]
+    public Stories Stories { get; set; }
+
+    [JsonProperty("events")]
+    public Comics Events { get; set; }
+
+    [JsonProperty("urls")]
+    public Url[] Urls { get; set; }
+}
+

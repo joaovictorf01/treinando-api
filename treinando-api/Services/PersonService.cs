@@ -13,9 +13,9 @@ public class PersonService
 
         var responseMessage = await client.GetAsync("https://gateway.marvel.com/v1/public/characters?ts=yourtsvalue&apikey=publickeyvalue&hash=hashvalue");
 
-        Console.WriteLine(responseMessage.Content.ReadAsStringAsync);
-
-        return responseMessage.Content.ReadAsStringAsync;
+        Console.WriteLine( await responseMessage.Content.ReadAsStringAsync());
+        string result=await responseMessage.Content.ReadAsStringAsync();
+        return result;
     }
 
     

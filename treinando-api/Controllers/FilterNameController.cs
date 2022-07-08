@@ -9,9 +9,12 @@ public class FilterNameController : ControllerBase
 {
     PersonService service = new PersonService();
     [HttpGet]
-    public ActionResult<string> a (){
-         
-        return "chato";  
+
+    public async Task<object> ServiceToController()
+    {
+                
+        var data = await service.GetDataApi();
+        return data;
 
         }
 
