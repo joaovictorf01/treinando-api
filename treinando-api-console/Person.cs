@@ -1,8 +1,8 @@
 ﻿public class Person
 {
-    public string name { get; set; }
+    public string Name { get; set; }
 
-    public string description { get; set; }
+    public string Description { get; set; }
 
     
 
