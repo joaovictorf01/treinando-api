@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using Treinando_api.Models;
 using Treinando_api.Services;
 
 namespace Treinando_api.Controllers;
@@ -7,23 +9,10 @@ namespace Treinando_api.Controllers;
 
 public class FilterNameController : ControllerBase
 {
+       
     PersonService service = new PersonService();
-    [HttpGet]
+    
 
-    public async Task<object> ServiceToController()
-    {
-                
-        var data = await service.GetDataApi();
-        return data;
-
-        }
-
-
-
-
-
-
-
-
+        Person characters = JsonConvert.DeserializeObject<MarvelResponse>(jsonReturn);
 
 }

@@ -1,11 +1,8 @@
 ﻿using System.Text;
 using System.Security.Cryptography;
 
-
-
 public class PersonService
 {
-
     string ts = DateTime.Now.Ticks.ToString();
 
     string publicKey = "217cd5c2d5a07a962fc8760565aeca83";

@@ -1,10 +1,12 @@
 ﻿namespace Treinando_api.Models;
+
+
 public class Person
 {
-    public string name;
+    public string Name { get; set; }
 
-    public string description;
+    public string Description { get; set; }
 
-
+    
 
 }
