@@ -9,10 +9,23 @@ namespace Treinando_api.Controllers;
 
 public class FilterNameController : ControllerBase
 {
-       
+
     PersonService service = new PersonService();
-    
+    private string jsonReturn;
+    public async Task<string> GetApi()
+    {
+        var jsonReturn = await service.GetDataApi();
+        return jsonReturn;
+    }
+    public object CreatPerson()
+    {
+        var characters = JsonConvert.DeserializeObject<MarvelResponse>(jsonReturn);
+        return characters;
+    }
 
-        Person characters = JsonConvert.DeserializeObject<MarvelResponse>(jsonReturn);
+    [HttpGet]
+    public ActionResult<MarvelData>(){
 
+        return characters;
+        }
 }
