@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "treinando-api", "treinando-api\treinando-api.csproj", "{CE2799EA-4470-4862-8AC5-47017CEB600A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "treinando-api-web", "treinando-api\treinando-api-web.csproj", "{CE2799EA-4470-4862-8AC5-47017CEB600A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "treinando-api-console", "treinando-api-console\treinando-api-console.csproj", "{D37D1B37-175E-4B10-9FA3-4D280E50F53D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "treinando-api-console", "treinando-api-console\treinando-api-console.csproj", "{D37D1B37-175E-4B10-9FA3-4D280E50F53D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
